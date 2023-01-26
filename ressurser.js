@@ -106,16 +106,23 @@ nav.innerHTML = resources.map((resource, i) => {
   return `<button data-id=${i} ${i === 0 ? 'class="selected"' : ''}>${resource.category}</button>`
 }).join('');
 
-// Funksjonen tar et argument "knapnr" som representerer et indeks i arrayet "resources".
+// Funksjonen tar et argument "knapnr" som representerer et indeks i arrayet "resources", og henter data fra listen "resources" på den tilsvarende index.
 function info(knapnr) {
   const { category, text, sources } = resources[knapnr];
+  //Henter Category title, text og  sources.
   kategoriNavn.innerHTML = category;
   innehold.innerHTML = text;
   uls.innerHTML = sources.map((source) => {
     return `<li><a href="${source.url}">${source.title}</a></li>`;
   }).join('');
 }
+// viser dataene for det første element i resources-listen på automatisk når man opner nettsiden.
 info(0);
+
+// setter opp hendelse for alle knappene på siden, og når en knapp trykkes på vil funksjonen:
+// fjerner klassen "selected" fra alle knappene
+// legger til klassen "selected" til den trykte knappen
+// kaller funksjonen "info" med data-id til den trykte knappen som et argument.
 
 document.querySelectorAll("button").forEach((button) => {
   button.addEventListener("click", function() {

@@ -1,0 +1,81 @@
+body{
+    margin-top :  0 ;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#container{
+    width: 100%;
+    margin: 100px auto;
+    max-width: 700px;
+}
+
+header{
+    width: 100%;
+    border: solid 2px rgb(199, 199, 199);
+}
+
+header h1{
+    padding: 25px 30px;
+    color: rgb(102, 102, 102);
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    max-width: 700px;
+    border-bottom: solid 9px #20cece;
+}
+
+button{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(248, 248, 248);
+    padding: 25px 30px;
+    border: solid 2px rgb(199, 199, 199);
+    border-bottom:none;
+    color: rgb(102, 102, 102);
+    
+}
+
+.selected{
+    background-color: #20cece;
+}
+
+#kategoriNavn{
+    padding: 20px 0 0 30px;
+    border: solid 2px rgb(199, 199, 199);
+    border-top: none;
+    height: 30vh;
+
+}
+
+#innehold{
+    color: rgb(119, 119, 119);
+}
+
+#sectionTitle{
+    margin: 0;
+    padding: 0;
+    color: rgb(102, 102, 102);
+}
+
+#ulTag{
+    padding: 0 0 0 12px;
+   
+}
+
+#ulTag a{
+    color: #20cece;
+}
+
+#ulTag li{
+    padding: 5px;
+}
+
+
+
